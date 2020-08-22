@@ -3381,10 +3381,10 @@ use Carbon\Carbon;
 
                                 $slideImage .= "<div class='lw-owl-item' data-bg-color='$bgColor'><div class='lw-owl-captions'>
                                                         <div class='lw-owl-caption' style='color: #$captionTwoColor'>$captionTwo</div>
-                                                        <div class='lw-owl-caption' style='color: #$captionOneColor'>$captionOne</div>
+                                                        <div class='lw-owl-caption' style='font-size:40px;color: #$captionOneColor'>$captionOne</div>
                                                         <div class='lw-owl-caption'>$captionThree</div>
                                                     </div>
-                                                    <div class='lw-owl-item-image'><img src='$thumbnailImg'></div></div>";
+                                                    <div class='lw-owl-item-'><img style='width:550px;' src='$thumbnailImg'></div></div>";
                             
                                 $slides = [
                                     '{__sliderKey__}' => $sliderKey,

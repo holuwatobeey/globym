@@ -1,7 +1,7 @@
 {
-    "name": "livelyworks/livelycart-3",
-    "description": "livelycart-3 by LivelyWorks",
-    "keywords": ["framework", "laravel"],
+    "name": "globym-beauty-website/globym",
+    "description": "Beauty website",
+    "keywords": ["beauty", "laravel"],
     "license": "NA",
     "type": "project",
     "require": {
