@@ -17,6 +17,6 @@ yarn-error.log
 .phpunit.result.cache
 # /dist
 .env.php
-/media-storage
+# /media-storage
 /media_storage
 __MACOSX
