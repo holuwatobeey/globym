@@ -89,7 +89,7 @@ class ManagePagesController extends BaseController
 
                 return [
                    'url' =>  isset($link['value']) ? $link['value'] : '',
-                   'target' => $link['type'],
+                   'target' => isset($link['type']) ? $link['type'] : '',
                 ];
             },
             'page_title' => function ($key) {
