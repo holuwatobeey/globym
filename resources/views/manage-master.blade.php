@@ -315,9 +315,6 @@
 				                        </li>
 				                    </ul>
 				                </li>
-                                <li class="">
-                                    <a href="<?= route('installation.version.index') ?>"><?=  __tr('Update') ?></a>
-                                </li>
 			            	</ul>
                         </div>
 			        </nav>

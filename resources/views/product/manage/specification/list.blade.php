@@ -10,7 +10,7 @@
         <table class="table table-bordered table-sm">
             <tbody>
                 <tr>
-                    <td colspan="2"><strong><?= __tr( 'LivelyCart-2 Specification' ) ?></strong></td>
+                    <td colspan="2"><strong><?= __tr( 'Specification' ) ?></strong></td>
                 </tr>
                 <tr>
                     <td  class="small"><strong><?= __tr( 'Name' ) ?></strong></td>
