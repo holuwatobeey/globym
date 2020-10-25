@@ -1434,7 +1434,7 @@ class ProductEngine implements ProductEngineBlueprint
 
         $productsBrandID = (!empty($input['sbid'])) ? $input['sbid'] : '';
 
-        $brandIds = __ifIsset($resultedProudctOfBrandIds, implode($resultedProudctOfBrandIds, '|'), '');
+        $brandIds = __ifIsset($resultedProudctOfBrandIds, implode('|', $resultedProudctOfBrandIds), '');
 
         return __engineReaction(1, [
             'breadCrumb' => $breadCrumbType,
