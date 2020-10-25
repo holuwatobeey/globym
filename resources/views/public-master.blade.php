@@ -267,7 +267,7 @@
 <div class="jumbotron jumbotron-fluid vertical-center">
     <div class="container-fluid pt-5">
         <div class="container-fluid pt-5">
-            <div class="container-fluid pt-5">
+            <div class="pt-5">
                 <h1 class="display-3">WELCOME TO GLOBYM</h1>
                 <h3 class="">Feed your skin from outside within</h3>
                 <hr class="my-4">

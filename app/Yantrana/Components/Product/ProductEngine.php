@@ -1332,7 +1332,8 @@ class ProductEngine implements ProductEngineBlueprint
 
                 $productName = $product->name;
                 $isAddedInWishlist = false;
-                if (!__isEmpty($product->productWishlist['wishlistId'])) {
+                if (isset($product->productWishlist['wishlistId'])) {
+                    // if (!__isEmpty($product->productWishlist['wishlistId'])) {
                     $isAddedInWishlist = true;
                 }
 
