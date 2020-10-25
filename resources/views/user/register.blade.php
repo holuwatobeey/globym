@@ -122,7 +122,7 @@
 		                class="lw-form-field"
 		                name="term_condition" 
 		                ng-model="registerCtrl.userData.term_condition"/>
-	                <?=  __tr( 'I have read and accept' )  ?>
+	                <?=  __tr( 'I have read and accepted' )  ?>
 					<!--  /read and accept checkbox  -->
 					<a  title="<?=  __tr('Terms &amp; Conditions')  ?>" 
 	    				href="" ng-click="registerCtrl.showTermsAndConditionsDialog()">

@@ -1392,7 +1392,7 @@ class ProductEngine implements ProductEngineBlueprint
                 // if in product addon price add then show addon otherwise not
               
                 $isAddedInWishlist = false;
-                if ($userId == $product->productWishlist['addWishlistUserId']) {
+                if ($userId == (isset($product->productWishlist['addWishlistUserId']))) {
                     $isAddedInWishlist = (isset($product->productWishlist['wishlistId'])
                             and $product->productWishlist['wishlistId'] == true) ? true : false;
                 }
