@@ -88,7 +88,7 @@ class ManagePagesController extends BaseController
                 $link = json_decode($key['link_details'], true);
 
                 return [
-                   'url' => $link['value'],
+                   'url' =>  isset($link['value']) ? $link['value'] : '',
                    'target' => $link['type'],
                 ];
             },
