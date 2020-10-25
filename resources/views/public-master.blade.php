@@ -271,8 +271,8 @@
     <div class="jumbotron jumbotron-fluid vertical-center">
         <div class="container-fluid">
             <h1 class="display-3">Welcome To Globym</h1>
-            <p class="lead">Feed your skin from outside within!</p>
-            <hr class="my-4">
+            <h3 class=""><i>Feed your skin from outside within </i></h3>
+            <hr class="my-4"> 
             {{-- <p>Description text</p> --}}
             <p class="lead">
                 <a class="btn btn-success btn-lg btn-jumbotron" href="#" role="button">Order Now</a>
