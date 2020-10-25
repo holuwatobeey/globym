@@ -19,7 +19,7 @@
 
                 <li class="<?= isActiveRoute('manage.app') ?> lw-show-process-action nav-item" ng-if="publicCtrl.auth_info.authorized && publicCtrl.auth_info.canAccessManageApp" ng-cloak>
                     <a href="<?=  route('manage.app')  ?>" title="<?= __tr( 'Manage Store' ) ?>">
-                        <i class="fa fa-cogs"></i> <?=  __tr('Manage Store')  ?>
+                        <i class="fa fa-wrench"></i> <?=  __tr('Admin Area')  ?>
                     </a>
                 </li>
             

@@ -3379,12 +3379,12 @@ use Carbon\Carbon;
                                 $captionOneColor = isset($slide['caption_1_color']) ? $slide['caption_1_color'] : $textColor;
                                 $captionTwoColor = isset($slide['caption_2_color']) ? $slide['caption_2_color'] : $textColor;
 
-                                $slideImage .= "<div class='lw-owl-item' data-bg-color='$bgColor'><div class='lw-owl-captions'>
-                                                        <div class='lw-owl-caption' style='color: #$captionTwoColor'>$captionTwo</div>
-                                                        <div class='lw-owl-caption' style='font-size:40px;color: #$captionOneColor'>$captionOne</div>
-                                                        <div class='lw-owl-caption' style='font-size:40px;color: #$captionOneColor'>$captionThree</div>
-                                                    </div>
-                                                    <div class='lw-owl-item-'><img style='width:550px;' src='$thumbnailImg'></div></div>";
+                                // $slideImage .= "<div class='lw-owl-item' data-bg-color='$bgColor'><div class='lw-owl-captions'>
+                                //                         <div class='lw-owl-caption' style='color: #$captionTwoColor'>$captionTwo</div>
+                                //                         <div class='lw-owl-caption' style='font-size:40px;color: #$captionOneColor'>$captionOne</div>
+                                //                         <div class='lw-owl-caption' style='font-size:40px;color: #$captionOneColor'>$captionThree</div>
+                                //                     </div>
+                                //                     <div class='lw-owl-item-'><img style='width:550px;' src='$thumbnailImg'></div></div>";
                             
                                 $slides = [
                                     '{__sliderKey__}' => $sliderKey,

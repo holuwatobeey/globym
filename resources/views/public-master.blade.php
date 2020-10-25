@@ -55,7 +55,34 @@
         'dist/libs/jquery/jquery.min.js',
         'dist/libs/lodash/lodash.min.js'
     ]) ?>
-
+        <style>
+            body{
+                background:#fafafa;
+            }
+            .jumbotron {
+            background-image: url('dist/imgs/visual4.jpg');
+            background-size: cover;
+            color: white;
+            font-weight: bolder;
+    
+        }
+        
+        .vertical-center {
+        min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: 100vh; /* These two lines are counted as one :-)       */
+        
+        min-height: calc(100% - 64px);  /*  */
+        min-height: calc(100vh - 64px); /* */
+        
+        display: flex;
+        align-items: center;
+        }
+        
+        .btn-jumbotron{
+            /* background-color: black;
+            border-color: white; */
+        }
+        </style>
     <style>
         .lw-page-content, .hide-till-load, .lw-main-loader, .lw-page-loader{
             display: none;
@@ -221,7 +248,17 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+       
     </div>
+
     <div class="clearfix"></div>
     <div class="lw-small-screen-search-container visible-xs">
        {{-- @include('includes.search-panel') --}}
@@ -229,10 +266,23 @@
 
     <div class="lw-sidebar-overlay" data-toggle="offcanvas"></div>
     <div class="lw-public-sidebar-overlay" ></div>
-	
+    @if(url()->current() == url('/') || url()->current() == url(''))
+        
+    <div class="jumbotron jumbotron-fluid vertical-center">
+        <div class="container-fluid">
+            <h1 class="display-3">Welcome To Globym</h1>
+            <p class="lead">Feed your skin from outside within!</p>
+            <hr class="my-4">
+            {{-- <p>Description text</p> --}}
+            <p class="lead">
+                <a class="btn btn-success btn-lg btn-jumbotron" href="#" role="button">Order Now</a>
+            </p>
+        </div>
+    </div>
+    @endif
 <!-- container -->
 <!-- section -->
-    <div class="container-fluid mb-5 lw-side-space lw-main-content-container">
+    <div class="container-fluid mb-5 lw-side-space lw-main-conent-container">
         <div class="row lw-container-row">
             @if(isDemo())
                 <style>
@@ -411,7 +461,7 @@
                <span class="float-left lw-copyright-text">
                     <?= __transliterate('general_setting', null, 'store_name', getStoreSettings('store_name') ). ' - ' ?> &copy; <?= date("Y") ?>
                 </span>
-                 <span class="pull-right">
+                 <span style="display: none" class="pull-right">
                     @if(getStoreSettings('social_twitter'))
                         <a class="btn btn-link" title="Twitter" target="_blank" href="https://twitter.com/<?= getStoreSettings('social_twitter') ?>"> <i class="fa fa-twitter"></i></a>
                     @endif
@@ -421,7 +471,7 @@
                     @endif
 
                     @if (getStoreSettings('privacy_policy'))
-                        <span>
+                        <!<span>
                             <a title="<?= __tr('Privacy Policy') ?>" target="_new" href="<?=  route('privacy.policy')  ?>">
                             <?=  __tr('Privacy Policy')  ?>
                             </a>
