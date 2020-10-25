@@ -1147,7 +1147,7 @@ img.lazy {
   border-radius: 6px; }
 
 .lw-store-header {
-  position: ;
+  position: fixed;
   width: 100%;
   z-index: 100;
   height: 115px; }
@@ -1532,7 +1532,6 @@ img.lazy {
   margin-left: 57px; }
 
 .lw-side-space {
-  
   }
 
 .bs-popover-auto[x-placement^=bottom], .bs-popover-bottom {
