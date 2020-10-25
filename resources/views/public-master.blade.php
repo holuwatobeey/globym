@@ -66,6 +66,11 @@
             font-weight: bolder;
     
         }
+        @media screen and (max-width: 425px) {
+            .jumbotron {
+                margin-top:-14%;
+            }
+         }
         
         .vertical-center {
         min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
