@@ -35,7 +35,7 @@ if (!function_exists('changeAppLocale')) {
                     : getStoreSettings('default_language');
                     
         // get available locale
-        $availableLocale = $localeConfig['available'];
+        $availableLocale = $localeConfig['available'] ?? 'English';
 
         // check if locale is available
         if ($localeId and array_key_exists($localeId, $availableLocale)) {
